@@ -4,7 +4,7 @@
 
 ## 致谢
 
-本博客外观基于 [DONGChuan](https://dongchuan.github.io) 修改，感谢！
+本部落格外觀基於 [DONGChuan](https://dongchuan.github.io) 修改，感谢！
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
