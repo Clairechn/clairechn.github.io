@@ -13,6 +13,7 @@ permalink: /about/
 <li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">@{{ website.name }}</a></li>
 {% endfor %}
 {% if site.url contains 'clairechn.github.io' %}
+{% endfor %}
 </ul>
 
 <!-- ## Skill Keywords
