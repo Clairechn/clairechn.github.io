@@ -11,7 +11,7 @@ comments: false
   .home .banner .collection-head a,
   .home .site-header h1 a,
   .home .site-header .site-header-nav-item:hover {
-      color: {{ site.index.banner.color | default: '#fff' }};
+      color: {{ site.index.banner.color | default: '#f5f5f5' }};
   }
 
   .home .site-header .site-header-nav-item {
@@ -20,7 +20,7 @@ comments: false
 
   .home .banner,
   .home .site-header {
-      background-color: {{ site.index.banner.background-color | default: '#4183c4'}};
+      background-color: {{ site.index.banner.background-color | default: '#f5f5f5'}};
   }
 
   {% if site.index.banner.background-image %}
@@ -43,7 +43,7 @@ comments: false
 
   @media (max-width:50em) {
     .home .collapsed .icon-bar {
-      background-color: white;
+      background-color: #f5f5f5;
     }
 
     .home .collection-head .collection-header {
