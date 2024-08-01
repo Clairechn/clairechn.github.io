@@ -32,7 +32,9 @@ permalink: /wiki/
 
 {% assign item_grouped = site.wiki | where_exp: 'item', 'item.title != "Wiki Template"' | group_by: 'cate1' | sort: 'name' %}
 {% for group in item_grouped %}
+
 ### {{ group.name }}
+
 {% assign cate_items = group.items | sort: 'title' %}
 {% assign item2_grouped = cate_items | group_by: 'cate2' | sort: 'name' %}
 {% for sub_group in item2_grouped %}
@@ -44,7 +46,7 @@ permalink: /wiki/
 {%- assign item_index = 0 -%}
 {%- for item in sub_group.items -%}
 {%- assign item_index = item_index | plus: 1 -%}
-<a href="{%- if item.type == 'link' -%}{{ item.link }}{%- else -%}{{ site.url }}{{ item.url }}{%- endif -%}" style="display:inline-block;padding:0.5em" {% if item.type == 'link' %} target="_blank" {% endif %} >{{ item.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if item.layout == 'mindmap' %}  mindmap{% endif %}</span></a>{%- if item_index < item_count -%}<span> <b>·</b></span>{%- endif -%}
+<a href="{%- if item.type == 'link' -%}{{ item.link }}{%- else -%}{{ site.url }}{{ item.url }}{%- endif -%}" style="display:inline-block;padding:0.5em" {% if item.type == 'link' %} target="\_blank" {% endif %} >{{ item.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if item.layout == 'mindmap' %} mindmap{% endif %}</span></a>{%- if item_index < item_count -%}<span> <b>·</b></span>{%- endif -%}
 {%- endfor -%}
 {% endfor %}
 {% endfor %}
